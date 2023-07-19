@@ -1,0 +1,50 @@
+@import './variable';
+
+
+@mixin fontgilroy(
+$size:18px,
+$color:black,
+$weight:400,
+$height:22.2px,
+) {
+  font-family:'Gilroy',sans-serif;
+  font-size: $size;
+  color: $color;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin fontinter(
+$size:18px,
+$color:black,
+$weight:400,
+$height:22.2px,
+) {
+  font-family:'inter',sans-serif;
+  font-size: $size;
+  color: $color;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $height;
+}
+@mixin fontdmSens(
+$size:18px,
+$color:black,
+$weight:400,
+$height:22.2px,
+) {
+  font-family:'dm-sens',sans-serif;
+  font-size: $size;
+  color: $color;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+
+
+
+
+
+

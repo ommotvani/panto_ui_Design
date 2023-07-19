@@ -1,0 +1,1173 @@
+// .homepage {
+//     background-image: url('../images/Rectangle1441.svg');
+//    background-position: center center;
+//    background-repeat: no-repeat;
+//    background-attachment: fixed;
+//    background-size: cover;
+//    max-width: 100%;
+//   height: 100vh;
+//   }
+
+
+
+
+// about us section sccs start from here
+
+@import '../../assets/scss/App.scss';
+
+.aboutus_container{
+  margin-top: 120px;
+
+  .aboutus_section{
+    display: flex;
+   gap: 130px;
+   padding-bottom: 120px;
+
+   @media screen  and (max-width:map-get($mediaSizes, 'xl')){
+    flex-direction: column;
+  }
+
+h2{
+    font-weight: bold;
+
+    @include fontgilroy(
+       42px,
+       $titlecolor,
+       700,
+       49.22px,
+    );
+
+    min-width: 242px !important;
+    opacity: 0.9;
+  
+    @media screen  and (max-width:map-get($mediaSizes, 'xl')){
+      display: flex;
+      // justify-content: center;
+    }
+    
+  
+  }
+    
+.aboutus_description{
+    display: flex;
+    gap:28px;
+
+    @media screen  and (max-width:map-get($mediaSizes, 'xl')){
+        flex-direction: column;
+      }
+}
+
+.aboutus_contant{
+
+    h4{
+        @include fontgilroy(
+     24px,
+     $titlecolor,
+     700,
+     28.13px,
+      );
+     max-width: 272px;
+      opacity: 0.9;
+     
+    }
+     .description{
+        margin-top: 20px;
+     p{
+        @include fontgilroy(
+            16px,
+            $titlecolor,
+            400,
+            29.6px
+          );
+         opacity: 80%;
+     }  
+
+     span {
+       @include fontgilroy(
+        14px,
+        $orangecolor,
+        600,
+        25.9px
+       )
+     }
+    }
+
+}
+
+}
+}
+
+
+//selling product sccs strat from here
+
+
+
+
+@import '../../assets/scss/App.scss';
+
+.prodcuts_section {
+
+    background-color: $sellingproductpagebackgroundcolor;
+
+    h3 {
+        padding-top: 50px;
+        text-align: center;
+        @include fontgilroy(
+          42px,
+            $titlecolor,
+            700,
+            49.22px,
+        );
+        @media screen  and (max-width:map-get($mediaSizes, 'xl')){
+         font-size: 38px;
+        }
+    }
+
+}
+
+// tabs section start
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  padding: 4px;
+   .active{
+    color:$whitecolor;
+    background-color:$whitecolor !important;
+    border-radius: 32px !important;
+    padding-right: 10px;
+   }
+
+    .nav-link{
+        color: $titlecolor !important;
+    }
+    .nav-pills {
+        margin-top: 32px !important;
+        margin-bottom: 80px !important;
+        // background-color: $whitecolor;
+        max-width: 348px;
+        margin: 0 auto;
+        border-radius: 44px;
+        padding: 8px;
+        background-color:$tabsbackgroundcolor;
+        justify-content: center;
+        
+        .nav-pills .nav-link.active {
+            background-color: $whitecolor;
+        }
+        .nav-item {
+            @include fontgilroy(
+              18px,
+            $titlecolor,
+            600,
+            33.3px);
+            opacity: 0.8;
+            .nav-link:active{
+              background-color:$whitecolor;
+              border-radius: 32px;
+              width: 84px;
+            }
+        }
+    }   
+}
+
+//tabs section end
+
+
+
+//product card slider scss start 
+
+.slick-slide {
+    margin-top: 60px;
+    // display: flex !important;
+    // justify-content: center !important;
+}
+
+.card {
+
+    border: none;
+
+    .card_img {
+      padding-bottom: 33px;
+        background-color: $productimagebgcolor;
+        img {
+            z-index: 2;
+            position: relative;
+            width: 224px;
+            height: 250px;
+            object-fit: contain;
+            margin-top: -60px;
+        }
+    }
+
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+
+        .product_title {
+            @include fontinter(16.76px,
+                $productcardtitlecolor !important,
+                300,
+                20.28px);
+
+        }
+
+        .product_sub_title {
+            @include fontinter(21.33px,
+                $productcardsubtitle !important,
+                600,
+                25.81px);
+            width: 188px;
+        }
+
+        .card_footer {
+          padding-top: 30px;
+          padding-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+
+            .price{
+                display: flex;
+                align-items: center;
+                position: relative;
+              
+                span{
+                 
+                    @include fontinter(21.33px,
+                    $productcardsubtitle !important,
+                    600,
+                    25.81px);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+//sllider sccs start 
+
+.products_container{
+  .cards_section {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    // margin-bottom: 143px;
+}
+
+.starts{
+  width: 103px;
+}
+
+}
+.viewall_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $orangecolor;
+  padding-bottom: 50px;
+  padding-top: 60px;
+}
+
+
+
+
+.custom-slick {
+    .slick-slide>div {
+        border: 0 !important;
+        border-radius: 20px !important;
+        width: 268px;
+        height: 100%;
+        background-color: $whitecolor;
+        margin: 0 auto;
+        z-index: -1;
+    }
+}
+
+.slick-slider {
+    .slick-list {
+        .slick-track {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+
+.products_container{
+
+    .slick-list{
+        .slick-track{
+            .slick-slide{
+                
+                display: flex !important;
+                align-items: center !important;
+            }
+        }
+    }
+
+    .card{
+        min-width: 268px;
+        border-radius: 20px;
+
+        @media (min-width:1200px) and (max-width:1400px) {
+          min-width: 258px !important;
+        }
+        
+    }
+    .slick-slider {
+
+
+        .slick-prev {
+            display: block !important;
+            position: absolute;
+            left: 17px;
+            z-index: 1;
+            &::before {
+              content: url("../../assets/images/left_arrow.svg");
+              background-color: $whitecolor;
+              border-radius: 50% !important;
+              padding: 12px !important;
+              display: block;
+              position: absolute;
+              z-index: 1000;
+              transform: translate(-12px,-34px);
+              width: 50px;
+              height: 50px;
+              box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+              border-radius: 26.087px !important;
+              opacity: 1;
+            }
+          }
+        .slick-next {
+          display: block !important;
+          position: absolute;
+          right: 17px;
+          z-index: 1;
+          &::before {
+            content: url("../../assets/images/right_arrow.svg");
+            background-color: $whitecolor;
+            border-radius: 50% !important;
+            padding: 12px !important;
+            display: block;
+            position: absolute;
+            transform: translate(-15px,-34px);
+            z-index: 1000;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+            border-radius: 26.087px !important;
+            opacity: 1;
+          } 
+        }    
+      
+        @media (min-width:1200px) and (max-width:1400px) {
+      
+        }
+
+      @media screen  and (max-width:map-get($mediaSizes, 'lg')){
+        .slick-prev {
+          display: block !important;
+          position: absolute;
+          left: 17px;
+          z-index: 1;
+          &::before {
+            content: url("../../assets/images/left_arrow.svg");
+            background-color: $whitecolor;
+            border-radius: 50% !important;
+            padding: 12px !important;
+            display: block;
+            position: absolute;
+            z-index: 1000;
+            transform: translate(0px,-34px);
+            width: 50px;
+            height: 50px;
+            box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+            border-radius: 26.087px !important;
+          }
+        }
+      .slick-next {
+        display: block !important;
+        position: absolute;
+        right: 17px;
+        z-index: 1;
+        &::before {
+          content: url("../../assets/images/right_arrow.svg");
+          background-color: $whitecolor;
+          border-radius: 50% !important;
+          padding: 12px !important;
+          display: block;
+          position: absolute;
+          transform: translate(-25px,-34px);
+          z-index: 1000;
+          width: 50px;
+          height: 50px;
+          box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+          border-radius: 26.087px !important;
+        } 
+      } 
+       }
+
+       @media screen  and (max-width:map-get($mediaSizes, 'md')){
+        .slick-prev {
+          display: block !important;
+          position: absolute;
+          left: 17px;
+          z-index: 1;
+          &::before {
+            content: url("../../assets/images/left_arrow.svg");
+            background-color: $whitecolor;
+            border-radius: 50% !important;
+            padding: 12px !important;
+            display: block;
+            position: absolute;
+            z-index: 1000;
+            transform: translate(86px,-34px);
+            width: 50px;
+            height: 50px;
+            box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+            border-radius: 26.087px !important;
+          }
+        }
+      .slick-next {
+        display: block !important;
+        position: absolute;
+        right: 17px;
+        z-index: 1;
+        &::before {
+          content: url("../../assets/images/right_arrow.svg");
+          background-color: $whitecolor;
+          border-radius: 50% !important;
+          padding: 12px !important;
+          display: block;
+          position: absolute;
+          transform: translate(-102px,-34px);
+          z-index: 1000;
+          width: 50px;
+          height: 50px;
+          box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+          border-radius: 26.087px !important;
+        } 
+      } 
+       }
+       @media screen  and (max-width:map-get($mediaSizes, 'sm')){
+        .slick-prev {
+          display: block !important;
+          position: absolute;
+          left: 17px;
+          z-index: 1;
+          &::before {
+            content: url("../../assets/images/left_arrow.svg");
+            background-color: $whitecolor;
+            border-radius: 50% !important;
+            padding: 12px !important;
+            display: block;
+            position: absolute;
+            z-index: 1000;
+            transform: translate(0,250px);
+            width: 50px;
+            height: 50px;
+            box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+            border-radius: 26.087px !important;
+          }
+        }
+      .slick-next {
+        display: block !important;
+        position: absolute;
+        right: 17px;
+        z-index: 1;
+        &::before {
+          content: url("../../assets/images/right_arrow.svg");
+          background-color: $whitecolor;
+          border-radius: 50% !important;
+          padding: 12px !important;
+          display: block;
+          position: absolute;
+          transform: translate(0,250px);
+          z-index: 1000;
+          width: 50px;
+          height: 50px;
+          box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+          border-radius: 26.087px !important;
+        } 
+      } 
+       }
+      }
+}
+
+.client_container{
+    .slick-list{
+       .slick-track{
+        .slick-slide{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+       }
+    }
+  }
+
+// experince section scss starts from here
+
+
+@import '../../assets/scss/App.scss';
+
+
+.experince_section {
+  
+    margin-top: 323px;
+
+    @media screen and (max-width:map-get($mediaSizes, 'xl')) {
+        margin-top: 280px;
+    }
+
+
+    .experience_first_section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 80px;
+
+
+          .experince_section_description{
+            @media screen and (max-width:map-get($mediaSizes, 'xl')) {
+              padding: 52px;
+            }
+              .experince_section_heading{
+          
+                @include fontgilroy(
+                  18px,
+                $orangecolor,
+                 600,
+                21.09px,
+               );
+               text-transform: uppercase;
+               letter-spacing: 0.175em;
+             
+                
+              }
+              .experience_Section_title{
+                padding-top: 20px;
+                @include fontgilroy(
+                  42px,
+                $titlecolor,
+                 700,
+                49.22px,
+               );
+               text-transform: capitalize;
+              }
+              .experience_Section_description{
+                @include fontgilroy(18px,
+                $titlecolor,
+                 500,
+                33.3px,
+               );
+
+               opacity:0.8;
+                
+              }
+
+              .experince_section_footer{
+                color: $orangecolor;
+              }
+              
+          }
+        }
+
+    }
+
+.firstimg {
+    border-radius: 20px;
+}
+
+//experince secionn scss end here
+
+
+
+//material section strat from here
+
+
+@import '../../assets/scss/App.scss';
+
+.material_section{
+
+    display: flex;
+    margin-top: 270px;
+    justify-content: flex-end;
+    align-items: center;       
+    gap: 300px;
+    margin-left: 80px;
+                   
+    @media screen and (max-width:map-get($mediaSizes, 'sm')) {
+      margin-left: 19px;
+    }
+   
+    @media screen and (max-width: 1476px) {
+        gap: 141px;                                 
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: flex-end;
+        .experince_section_description2 {
+            max-width: calc(100% - 36px);
+            place-self: center;
+        }
+    }
+
+    .material_section_decription{
+        
+        margin-top: 150;
+        // width: 100%;
+        // max-width: 556px; 
+        @media screen and (max-width:map-get($mediaSizes, 'xl')) {
+            width: 100%
+          }
+
+        .material_section_heading {
+
+            @include fontgilroy(
+              18px,
+            $orangecolor,
+             600,
+            21.09px,
+           );
+           text-transform: uppercase;
+           letter-spacing: 0.175em;
+        }
+
+        .material_scetion_footer{
+          color: $orangecolor;
+        }
+
+        .material_section_title {
+            // width: 413px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 42px;
+            @include fontgilroy(
+              42px,
+            $titlecolor,
+            700,
+            49.22px,
+        );
+        text-transform: capitalize;
+
+
+            @media screen and (max-width:map-get($mediaSizes, 'sm')) {
+                font-size: 34px;
+                // width: 200px;
+              }
+           
+        }
+
+        .material_section_content {
+            @include fontgilroy(18px,
+                $titlecolor,
+                0,
+                33.4px,
+            );
+            opacity: 0.8;
+            width: 556px;
+            margin-top: 24px;
+
+            @media screen and (max-width:map-get($mediaSizes, 'md')) {
+                font-size: 14px;
+                width: 400px;
+              }
+              @media screen and (max-width:map-get($mediaSizes, 'sm')) {
+                font-size: 14px;
+                width: 268px;
+              }
+        }
+    }
+
+}
+
+
+// material scs section end here
+
+
+
+//experince section start from here
+
+@import '../../assets/scss/App.scss';
+
+
+// client section  title and subtitle tile sccs start here //
+
+.client_container{
+ 
+  .container_section{
+    margin-top: 260px;
+    .client_Section_title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      .client_section_subtitle {
+          display: flex;
+          flex-direction: column;
+  
+          .client_section_heading{
+            @include fontgilroy(
+              18px,
+            $orangecolor,
+            600,
+            33.4px,
+        );
+        letter-spacing: 0.175em;
+text-transform: uppercase;
+        }
+
+        h3{
+          padding-top: 20px;
+          @include fontgilroy(
+            42px,
+          $titlecolor,
+          700,
+          49.224px,
+      );
+        }
+      }
+  }
+  }
+}
+
+.slick-slide{
+    div{
+        border: none;
+    }
+}
+
+
+// client section  title and subtitle tile sccs end here //
+
+
+
+//slider scss start from here //
+.slick-prev:before,
+.slick-next:before {
+    color: #1E1E1E !important;
+}
+
+.slick-active {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+// slider section scss end here
+
+
+
+
+
+
+// card scss sstart here 
+
+.main_card{
+    background-image: url('../../assets/images/clientReviewFirstImg.svg');
+    background-repeat: no-repeat;
+    width: 370px;
+    height: 476px;
+    border-radius: 18.1182px;
+    // position: relative;
+    // filter:drop-shadow(2px 2px 2px gray);
+    // position: absolute;
+
+    // @media screen  and (max-width:map-get($mediaSizes, 'xl')){
+
+
+    // }
+    @media (min-width:1200px) and (max-width:1400px) {
+      width: 350px !important;
+    }
+    @media screen and (max-width:map-get($mediaSizes, 'sm')) {
+      width: 310px !important;
+    }
+    @media screen and (max-width:map-get($mediaSizes, 'xsm')) {
+      width: 275px !important;
+    }
+
+
+    
+
+    .card {
+        top: 236px;
+        margin: 18px;
+        width: 334px !important;
+        height: 206px;
+        border-radius: 18.1182px;
+        @media (min-width:1200px) and (max-width:1400px) {
+          width: 318px !important;
+        }
+        @media screen and (max-width:map-get($mediaSizes, 'sm')) {
+          width: 279px !important;
+          border-radius: 18px;
+        }
+        @media screen and (max-width:map-get($mediaSizes, 'xsm')) {
+          width: 227px !important;
+          border-radius: 18px;
+        }
+
+    }
+}
+
+
+
+.card_body_section {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    //    width: 80%;
+    margin: 0 auto;
+    background: $whitecolor;
+
+    @media (min-width:1200px) and (max-width:1400px) {
+      border-radius: 18px;
+    }
+    @media screen and (max-width:map-get($mediaSizes, 'sm')) {
+      border-radius: 18px;
+    }
+    @media screen and (max-width:map-get($mediaSizes, 'xsm')) {
+      border-radius: 18px;
+      width: 204px;
+    }
+
+
+    .client_card_title {
+        font-size: 18px;
+        text-align: center;
+        @include fontgilroy(
+          18px,
+        $titlecolor !important,
+        700,
+        21.09px);
+        text-transform: capitalize
+    }
+
+    .client_card_subtitle {
+        @include fontgilroy(
+          12px,
+            $titlecolor !important,
+            500,
+            14.06px);
+        opacity: 0.6;
+        text-align: center;
+    }
+
+    .client_description {
+        @include fontgilroy(14px,
+            $titlecolor !important,
+            100,
+            16.41px);
+        opacity: 0.8;
+        width: 252px;
+        text-align: center;
+        height: 51px;
+        @media screen and (max-width:map-get($mediaSizes, 'xsm')) {
+          font-size: 12px;
+          width: 150px;
+        }
+    }
+
+    .client_images {
+        display: flex;
+        justify-content: center !important;
+        position: relative;
+    }
+
+    .client_img {
+        position: absolute;
+        margin-top: -91px !important;
+        border-radius: 31px;
+        padding: 2px;
+        background: $whitecolor;
+        padding: 6px 8px;
+        width: 63px;
+    }
+
+    .client_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stars_img {
+        margin-top: -6px !important;
+       
+    }
+}
+
+.client_card_section {
+    gap: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.client_container{
+    .slick-slider {
+        .slick-prev {
+            display: block !important;
+            position: absolute;
+            left: 17px;
+            z-index: 1;
+            &::before {
+              content: url("../../assets/images/left_arrow.svg");
+              background-color: $whitecolor;
+              border-radius: 50% !important;
+              padding: 12px !important;
+              display: block;
+              position: absolute;
+              z-index: 1000;
+              width: 50px;
+              height: 50px;
+              box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+              border-radius: 26.087px !important;
+             opacity:1;
+              transform: translate(-8px, -49px);
+              // border: 2px solid red;
+            }
+          }
+        .slick-next {
+          display: block !important;
+          position: absolute;
+          right: 17px;
+          z-index: 1;
+          &::before {
+            content: url("../../assets/images/right_arrow.svg");
+            background-color: $whitecolor;
+            padding: 12px !important;
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0px 7.03125px 19.5312px rgba(0, 0, 0, 0.06);
+            border-radius: 26.087px !important;
+            transform: translate(-10px, -49px);
+            z-index: 1000;
+            opacity: 1;
+          }
+        }
+
+
+        @media (min-width:1200px) and (max-width:1400px) {
+          .slick-prev {
+            display: block !important;
+            position: absolute;
+            left: 17px;
+            z-index: 1;
+            &::before {
+              content: url("../../assets/images/left_arrow.svg");
+              background-color: $whitecolor;
+              border-radius: 50% !important;
+              padding: 12px !important;
+              display: block;
+              position: absolute;
+              z-index: 1000;
+             
+              transform: translate(-36px, -49px);
+              // border: 2px solid red;
+            }
+          }
+        .slick-next {
+          display: block !important;
+          position: absolute;
+          right: 17px;
+          z-index: 1;
+          &::before {
+            content: url("../../assets/images/right_arrow.svg");
+            background-color: $whitecolor;
+            border-radius: 50% !important;
+            padding: 12px !important;
+            display: block;
+            position: absolute;
+            transform: translate(11px, -49px);
+            z-index: 1000;
+          }
+        }
+        }
+    
+
+        @media screen  and (max-width:map-get($mediaSizes, 'xl')){
+            .slick-prev {
+                display: block !important;
+                position: absolute;
+                left: 17px;
+                z-index: 1;
+                &::before {
+                  content: url("../../assets/images/left_arrow.svg");
+                  background-color: $whitecolor;
+                  border-radius: 50% !important;
+                  padding: 12px !important;
+                  display: block;
+                  position: absolute;
+                  z-index: 1000;
+                 
+                  transform: translate(10px, -49px);
+                  // border: 2px solid red;
+                }
+              }
+            .slick-next {
+              display: block !important;
+              position: absolute;
+              right: 17px;
+              z-index: 1;
+              &::before {
+                content: url("../../assets/images/right_arrow.svg");
+                background-color: $whitecolor;
+                border-radius: 50% !important;
+                padding: 12px !important;
+                display: block;
+                position: absolute;
+                transform: translate(-18px, -49px);
+                z-index: 1000;
+              }
+            }
+        }
+
+
+        @media screen  and (max-width:map-get($mediaSizes, 'lg')){
+            .slick-prev {
+                // display: block !important;
+                // position: absolute;
+                // left: 17px;
+                // z-index: 1;
+                &::before {
+                  // content: url("../../assets/images/left_arrow.svg");
+                  // background-color: $whitecolor;
+                  // border-radius: 50% !important;
+                  // padding: 12px !important;
+                  // display: block;
+                  // position: absolute;
+                  // z-index: 1000;
+                 
+                  transform: translate(124px, -49px);
+                  // border: 2px solid red;
+                }
+              }
+            .slick-next {
+              // display: block !important;
+              // position: absolute;
+              // right: 17px;
+              // z-index: 1;
+              &::before {
+                // content: url("../../assets/images/right_arrow.svg");
+                // background-color: $whitecolor;
+                // border-radius: 50% !important;
+                // padding: 12px !important;
+                // display: block;
+                // position: absolute;
+                transform: translate(-136px, -49px);
+                z-index: 1000;
+              }
+            }
+        }
+        
+
+        @media screen  and (max-width:map-get($mediaSizes, 'md')){
+            .slick-prev {
+                display: block !important;
+                position: absolute;
+                left: 17px;
+                z-index: 1;
+                &::before {
+                  content: url("../../assets/images/left_arrow.svg");
+                  background-color: $whitecolor;
+                  border-radius: 50% !important;
+                  padding: 12px !important;
+                  display: block;
+                  position: absolute;
+                  z-index: 1000;
+                 
+                  transform: translate(39px, -52px);
+                  // border: 2px solid red;
+                }
+              }
+            .slick-next {
+              display: block !important;
+              position: absolute;
+              right: 17px;
+              z-index: 1;
+              &::before {
+                content: url("../../assets/images/right_arrow.svg");
+                background-color: $whitecolor;
+                border-radius: 50% !important;
+                padding: 12px !important;
+                display: block;
+                position: absolute;
+                transform: translate(-48px, -56px);
+                z-index: 1000;
+              }
+            }
+        }
+
+
+        @media screen  and (max-width:map-get($mediaSizes, 'sm')){
+          .slick-prev {
+              display: block !important;
+              position: absolute;
+              left: 17px;
+              z-index: 1;
+              &::before {
+                content: url("../../assets/images/left_arrow.svg");
+                background-color: $whitecolor;
+                border-radius: 50% !important;
+                padding: 12px !important;
+                display: block;
+                position: absolute;
+                z-index: 1000;
+               
+                transform: translate(0, 290px);
+                // border: 2px solid red;
+              }
+            }
+          .slick-next {
+            display: block !important;
+            position: absolute;
+            right: 17px;
+            z-index: 1;
+            &::before {
+              content: url("../../assets/images/right_arrow.svg");
+              background-color: $whitecolor;
+              border-radius: 50% !important;
+              padding: 12px !important;
+              display: block;
+              position: absolute;
+              transform: translate(0, 290px);
+              z-index: 1000;
+            }
+          }
+      }
+      }
+}
+
+
+.client_container{
+  .slick-list{
+     .slick-track{
+      .slick-slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // @media screen  and (max-width:map-get($mediaSizes, 'sm')){
+        // display: block;
+        // }
+
+      }
+     }
+  }
+}
+
+.slick-dots{
+  display: none;
+}
+
+//experince section end here
